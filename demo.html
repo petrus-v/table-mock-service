@@ -1,0 +1,43 @@
+<!--
+    @license
+    This file is part of table-mock-service element.
+
+    table-mock-service is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    any later version.
+
+    table-mock-service is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with table-mock-service. If not, see <http://www.gnu.org/licenses/>.
+-->
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <title>table-mock-service Demo</title>
+
+  <script src="../platform/platform.js"></script>
+  <link rel="import" href="table-mock-service.html">
+
+</head>
+<body unresolved>
+
+  <p>An example of using <code>&lt;table-mock-service></code>:</p>
+  <table-mock-service>
+    <h2>Hello table-mock-service</h2>
+  </table-mock-service>
+  <script>
+    // Wait for 'polymer-ready'. Ensures the element is upgraded.
+    window.addEventListener('polymer-ready', function(e) {
+      var table = document.querySelector('table-mock-service');
+      console.log("ready to show!");
+    });
+
+  </script>
+</body>
+</html>
